@@ -1,0 +1,17 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80dvw;
+  gap: 10px;
+}
+
+.title {
+  font-family: "Poppins";
+  font-weight: 200;
+  color: white;
+  rotate: -90deg;
+  text-align: center;
+  width: 5%;
+}

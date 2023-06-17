@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --background: #100f0f;
+  --edit-color: #393e46;
+}
+
+.todo {
+  display: grid;
+  background: var(--background);
+  color: #fff;
+  padding: 0 20px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.basic {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  justify-content: space-between;
+  padding: 10px 0 0 0;
+}
+
+.basic h1 {
+  font-weight: 200;
+}
+
+.basic_ops {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.desc {
+  border-top: 2px solid white;
+  padding-top: 20px;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.edit_title,
+.edit_desc,
+.edit_date {
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  background: var(--edit-color);
+}
+
+.edit_desc {
+  font-size: 1.2rem;
+}
+
+.edit_date {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.edit_btn {
+  align-self: center;
+  background: var(--edit-color);
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  width: fit-content;
+  border: 0;
+  outline: 0;
+}
