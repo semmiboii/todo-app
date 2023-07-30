@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.form {
+  color: black;
+  background-color: white;
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  height: 100%;
+  padding: 25px;
+  gap: 10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.form div {
+  display: grid;
+  gap: 1rem;
+  align-self: center;
+}
+
+.form input,
+textarea {
+  border-radius: 5px;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid black;
+}
+
+.form label {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-self: center;
+}
+
+.due_date input[type="date"] {
+  text-transform: uppercase;
+}
+
+button[type="submit"] {
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  outline: 0;
+  border: 0;
+  padding: 10px;
+  background-color: black;
+}
+
+button[type="submit"]:active {
+  scale: 0.99;
+}

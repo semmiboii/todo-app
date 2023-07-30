@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --background: #100f0f;
+  --edit-color: #393e46;
+}
+
+.todo {
+  display: grid;
+  background: var(--background);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.basic {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basic h1 {
+  font-size: 1rem;
+  word-break: break-all;
+  font-weight: 200;
+}
+
+.basic_ops {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  text-align: center;
+}
+
+.desc {
+  border-top: 2px solid white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.edit_title,
+.edit_desc,
+.edit_date {
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  background: var(--edit-color);
+}
+
+.edit_desc {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.edit_date {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.edit_btn,
+.delete_btn,
+.copy_btn {
+  align-self: center;
+  background: var(--edit-color);
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  width: fit-content;
+  border: 0;
+  outline: 0;
+}
+
+.delete_btn{
+  background-color: red;
+}
+
+.copy_btn:active{
+  background-color: green;
+}
