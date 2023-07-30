@@ -6,7 +6,6 @@ const Form = () => {
   let initialFormData = {
     title: "",
     due_date: "",
-    status: "",
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -20,7 +19,6 @@ const Form = () => {
     setFormData({
       title: title.current.value,
       due_date: due_date.current.value,
-      status: 'incomplete',
     });
   };
 

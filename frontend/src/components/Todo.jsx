@@ -20,8 +20,7 @@ const Todo = ({ id, title, due_date, status }) => {
   const [editedInput, setEditedInput] = useState({
     id,
     title,
-    due_date,
-    status,
+    due_date
   });
   
 
@@ -36,7 +35,6 @@ const Todo = ({ id, title, due_date, status }) => {
     setEditedInput((prevValues) => ({
       ...prevValues,
       [name]: value,
-      status: statusRef.current.checked ? 'complete' : 'incomplete'
     }));
   };
 
