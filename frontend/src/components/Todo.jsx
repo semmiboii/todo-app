@@ -9,7 +9,7 @@ import DoneIcon from "@mui/icons-material/Done";
 import DeleteIcon from '@mui/icons-material/Delete';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
-const Todo = ({ id, title, due_date, status }) => {
+const Todo = ({ id, title, due_date }) => {
 
   let copied = false;
 
